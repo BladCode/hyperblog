@@ -1,53 +1,154 @@
 *,
-*::after,
-*::before {
-    margin-left: 0;
+*:after,
+*:before {
     margin-top: 0;
-    padding-left: 0;
+    margin-left: 0;
     padding-top: 0;
+    padding-left: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #FFF;
+    min-width: 100%;
 }
 
-.header {
-    width: 100%;
-
-    padding-top: 10px;
-    padding-bottom: 10px;
-
+.container__header {
+    margin-top: 20px;
+    
     display: flex;
-    justify-content: flex-end;
+
     align-items: center;
+    justify-content: flex-end;
 }
 
-.header__img {
+.img {
     display: inline-block;
-    padding-right: 5px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    padding-right: 5px;
-
-    color: #000;
+    width: 20px;
+    height: 20px;
+    background-color: #EEEEEE;
 }
 
 .header__link {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
+    margin-right: 20px;
+}
 
-    text-decoration: none;
-    color: #000;
+.link {
     font-size: 12px;
+    color: #000000;
 }
 
 .button {
-    background-color: #3E92CC;
+    padding: 10px;
+    margin-right: 20px;
 
-    color: #FFF;
+    background-color: #2191EB;
+
+    color: #FFFFFF;
+}
+
+.container__main {
+    width: 100%;
+}
+
+.container__img {
+    width: 300px;
+    height: 150px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.entrada {
+    width: 50%;
+    height: 40px;
+
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: #FFFFFF;
+    border: 1px solid rgb(221, 215, 215);
+    border-radius: 30px;
+}
+
+.botones {
+    width: 100%;
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    margin-right: 10px;
+
+    background-color: #EEEEEE;
+    color: #000000;
+    font-size: 14px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.texto {
+    margin-top: 30px;
+
+    text-align: center;
+    font-size: 12px;
+}
+
+.pais, 
+.enlaces {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+
+    background-color: #EEEEEE;
+}
+
+.pais {
+    border-top: 1px solid rgb(200, 200, 200);;
+    border-bottom: 1px solid rgb(206, 200, 200);
+}
+
+.enlaces {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.negocios,
+.politicas {
+    font-size: 12px;
+}
+
+.politicas {
+    margin-right: 20px;
+}
+
+.link-enlaces {
+    color: #000000;
+}
+
+.link-enlaces:hover,
+.header__link:hover {
+    text-decoration: underline;
 }
